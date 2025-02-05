@@ -18,15 +18,19 @@ const anotherElement = (
   <a href="https://google.com" target='_blank'>Visit Google</a>
 )
 
+const username = "Moushuf Alam"
+
 // to pass this use functional method without ()
 const reactElement = React.createElement(
   'a', //first one is tag
-  {href:'https://google.com',target:'_blank'},
-  'Click me to visit google'
+  {href:'https://google.com',target:'_blank'}, //object
+  'Click me to visit google', // innerText
+  //now goes the evaluation statement
+  username
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   
-    <App/>
+    reactElement
   
 )
